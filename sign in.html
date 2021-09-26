@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Signup/Login page</title>
+<style>
+body{
+  background-color: #ebebe0;
+}
+  form {
+      background-color:white;
+      max-width: 500px;
+      margin: 50px auto;
+      padding: 30px 20px;
+      box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+      color:#008ae6;
+      font-weight: bold;
+        }
+ 
+/* Styling form-control Class */
+  .form-control {
+      text-align: left;
+      margin-bottom: 25px;
+        }
+
+/* Styling form-control Label */
+  .form-control label {
+      display: block;
+      margin-bottom: 10px;
+        }
+ 
+/* Styling form-control input,
+        select, textarea */
+  .form-control input,
+  .form-control select,
+  .form-control textarea {
+      border: 1px solid #777;
+      border-radius: 2px;
+      font-family: inherit;
+      padding: 10px;
+      display: block;
+      width: 95%;
+        }
+ 
+/* Styling form-control Radio
+        button and Checkbox */
+   .form-control input[type="radio"],
+   .form-control input[type="checkbox"] {
+   display: inline-block;
+   width: auto;
+        }
+
+/* Styling h1 and h2 */
+   h1,h2{
+   text-decoration: underline;
+   color:#008ae6;
+        }
+
+/* Styling back button */
+.backbtn {
+   background-color:#ffcccc;
+}
+
+/* Styling back button & sign up button */
+.signinbtn {
+  float: left;
+  width: 50%;
+  font-size: 15px;
+}
+
+/* Styling button */
+button {
+  background-color: #0066cc;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  font-size: medium;
+}
+
+button:hover {
+  opacity:2;
+}
+
+/* Styling container */
+.container {
+  padding: -10px;
+}
+
+/* Styling class modal */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  padding-top: 50px;
+}
+
+/* Styling class modal content */
+.modal-content {
+  background-color:white;
+  margin: 5% auto 15% auto; 
+  border: 2px solid #888;
+  width: 90%; 
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 300px) {
+ .signinbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+  <form class="modal-content" action="/action_page.php">
+    <h2>Sign in</h2>
+    <div class="container">
+        <div class="form-control">
+            
+       <!-- Create Form -->
+    <form id="login-form">
+ 
+        <!-- Details -->
+        <div class="form-control">
+            <label for="username" id="name-label">
+                Username
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text" 
+                   id="username"
+                   placeholder="Enter username" name="username" required/>
+        </div>
+
+        <div class="form-control">
+            <label for="password" id="password-label">
+                Password
+            </label>
+
+            <!-- Input Type Password-->
+            <input type="password" id="password" placeholder="Enter password" type="password" required/>
+        </div>
+
+  
+        <div class="form-control">
+            <!-- Input Type Checkbox -->
+            <label for="inp-1">
+                <input type="checkbox"
+                       name="inp" value="javascript" >Remember me</input></label>
+           
+        </div>
+      <div class="clearfix">
+        <button type="submit" class="signupbtn">Sign in</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
+
+    
